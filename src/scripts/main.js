@@ -51,10 +51,7 @@ button.addEventListener('click', () => {
     messageStart.classList.add('hidden');
   } else {
     game.restart();
-    button.classList.remove('restart');
-    button.classList.add('start');
-    button.textContent = 'Start';
-    messageStart.classList.remove('hidden');
+    game.start();
     messageWin.classList.add('hidden');
     messageLose.classList.add('hidden');
   }
